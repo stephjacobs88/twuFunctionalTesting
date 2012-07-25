@@ -19,7 +19,9 @@ public class TWUAssignment3 {
         WebElement submitbutton = driver.findElement(By.id("submitButton"));
         submitbutton.submit();
         driver.close();
-        assertTrue("sjacobs@thoughtworks.com" == "sjacobs@thoughtworks.com");
+        WebElement successmessage = driver.findElement(by.className("header"));
+        String actualmessage = successmessage.getText();
+        assertEquals("Order Saved!", actualmessage);
         System.out.println("All cows eat grass");
     }
 }
