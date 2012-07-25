@@ -19,5 +19,7 @@ public class TWUAssignment3 {
         WebElement submitbutton = driver.findElement(By.id("submitButton"));
         submitbutton.submit();
         driver.close();
+        assertTrue("sjacobs@thoughtworks.com" == "sjacobs@thoughtworks.com");
+        System.out.println("All cows eat grass");
     }
 }
